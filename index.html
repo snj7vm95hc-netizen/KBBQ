@@ -1,1 +1,609 @@
 
+<!doctype html><html lang="my"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#c7442f"><meta name="description" content="Sae Ma Eul Puchong multilingual customer–waiter phrasebook with audio practice"><link rel="manifest" href="./manifest.webmanifest"><link rel="icon" href="./icon.svg"><title>Sae Ma Eul Phrasebook</title><style>
+:root{--bg:#f7f5f0;--paper:#fffdf8;--ink:#26231e;--muted:#736c60;--red:#c7442f;--red-soft:#fff0eb;--olive:#536447;--olive-soft:#eef3e9;--line:#ddd5c5;--shadow:0 8px 26px #4a382015}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans Myanmar","Noto Sans",sans-serif;line-height:1.55}.app{max-width:960px;margin:0 auto;padding:0 14px 56px}
+.hero{margin:0 -14px;padding:24px 20px 18px;background:linear-gradient(135deg,#fffaf1,#f1e8d8);border-bottom:4px solid var(--red);position:sticky;top:0;z-index:5;box-shadow:0 2px 12px #00000012}.brand{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--red);font-weight:800}.hero h1{font-family:Georgia,"Noto Serif Myanmar",serif;font-size:clamp(25px,6vw,42px);line-height:1.1;margin:5px 0}.hero p{margin:6px 0;color:var(--muted)}.mark{width:17px;height:17px;background:var(--red);flex:0 0 auto;margin-top:3px}
+.controls{margin:16px 0;display:grid;gap:10px}.search{width:100%;font-size:16px;padding:13px 14px;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink);outline:none}.search:focus{border-color:var(--red);box-shadow:0 0 0 3px #c7442f22}.filters{display:flex;gap:8px;overflow:auto;padding-bottom:2px}.chip{border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:999px;padding:8px 12px;white-space:nowrap;font-size:13px;cursor:pointer}.chip.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+.notice{padding:13px 15px;margin:14px 0;background:var(--red-soft);border-left:4px solid var(--red);border-radius:10px}.notice strong{color:#8e2d20}.audio-panel{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:15px;margin:14px 0;box-shadow:var(--shadow)}.audio-panel h2{font-size:20px;margin:0 0 4px}.audio-panel p{font-size:13px;color:var(--muted);margin:3px 0 12px}.audio-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.audio-card{display:grid;grid-template-columns:minmax(115px,.8fr) minmax(0,1.5fr);align-items:center;gap:10px;background:#f0eadf;border-radius:11px;padding:10px}.audio-card strong{display:block;color:var(--red);font-size:14px;margin:0}.audio-card small{color:var(--muted);display:block;margin-top:2px}.audio-card audio{min-width:0;width:100%;height:37px}
+.summary{display:flex;justify-content:space-between;align-items:center;margin:20px 0 10px;color:var(--muted);font-size:13px}.scenario{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0;box-shadow:var(--shadow)}.scenario h2{font-family:Georgia,"Noto Serif Myanmar",serif;font-size:22px;line-height:1.25;margin:0 0 13px;color:var(--red)}.scenario p{margin:9px 0}.scenario .turn{padding:10px 12px;border-radius:10px;border-left:4px solid var(--olive);background:var(--olive-soft)}.scenario .turn.customer{border-left-color:var(--red);background:var(--red-soft)}.role{display:inline-block;font-size:10px;letter-spacing:.07em;font-weight:800;margin-right:7px;color:var(--olive)}.customer .role{color:var(--red)}.scenario blockquote{margin:12px 0;padding:11px 13px;border-radius:9px;background:#fff4dc;border-left:4px solid #d98c34}.scenario table{display:block;overflow-x:auto;border-collapse:collapse;width:100%;font-size:14px}.scenario th,.scenario td{border:1px solid var(--line);padding:8px;vertical-align:top;min-width:145px}.scenario th{background:#eee6d7}.scenario ul{padding-left:22px}.hidden{display:none!important}.footer{margin-top:22px;color:var(--muted);font-size:12px;text-align:center}
+@media(max-width:600px){.app{padding-left:10px;padding-right:10px}.hero{margin-left:-10px;margin-right:-10px;padding-left:14px;padding-right:14px}.audio-grid{grid-template-columns:1fr}.audio-card{grid-template-columns:1fr;gap:5px}.audio-card audio{width:100%}.scenario{padding:13px}.scenario h2{font-size:20px}.scenario p{font-size:15px}.chip{padding:7px 11px}}
+</style></head><body><main class="app"><header class="hero"><div class="brand"><div><div class="eyebrow">Sae Ma Eul BBQ · Puchong</div><h1>Customer ↔ Waiter Phrasebook</h1><p>English · 中文 + Pinyin · Bahasa Melayu · မြန်မာ</p></div><div class="mark"></div></div><div class="notice"><strong>လေ့ကျင့်နည်း —</strong> စာတန်းကိုဖတ်ပါ၊ audio ကိုနားထောင်ပါ၊ ပြီးရင် Customer/Waiter role ပြောင်းပြီး လိုက်ပြောပါ။ Allergy, pork, halal, price, buffet rule နဲ့ menu availability ကို မခန့်မှန်းဘဲ kitchen/manager နဲ့ အရင်စစ်ပါ။</div></header><section class="audio-panel"><h2>စာသားနဲ့ကပ်လျက် အသံလေ့ကျင့်ရန်</h2><p>ဘာသာစကားအမည်နှင့် သက်ဆိုင်ရာစာတန်းကို ဘေးမှာတွေ့ရပါမယ်။ ဖုန်းသေးရင် audio ခလုတ်က စာတန်းအောက်ကို အလိုအလျောက်ဆင်းပါမယ်။</p><div class="audio-grid"><div class="audio-card"><div><strong>English</strong><small>Core service phrases</small></div><audio controls preload="none" src="./audio/Sae_Ma_Eul_Core_English.wav"></audio></div><div class="audio-card"><div><strong>中文 + Pinyin</strong><small>核心服务用语</small></div><audio controls preload="none" src="./audio/Sae_Ma_Eul_Core_Chinese.wav"></audio></div><div class="audio-card"><div><strong>Bahasa Melayu</strong><small>Frasa asas perkhidmatan</small></div><audio controls preload="none" src="./audio/Sae_Ma_Eul_Core_Malay.wav"></audio></div><div class="audio-card"><div><strong>မြန်မာ</strong><small>အခြေခံဝန်ဆောင်မှု စကားစုများ</small></div><audio controls preload="none" src="./audio/Sae_Ma_Eul_Core_Burmese.wav"></audio></div></div></section><section class="controls"><input id="search" class="search" placeholder="Search: kimchi, bill, halal, waiting..." aria-label="Search phrases"><div class="filters"><button class="chip active" data-topic-filter="all">All topics</button><button class="chip" data-topic-filter="Sae Ma Eul Korean BBQ · Puchong, Malaysia">Sae Ma Eul Korean BBQ · Puchong, Malaysia</button><button class="chip" data-topic-filter="၁။ ဝင်လာချိန် — စားပွဲရှိ/မရှိနှင့် လူအရေအတွက်">၁။ ဝင်လာချိန် — စားပွဲရှိ/မရှိနှင့် လူအရေအတွက်</button><button class="chip" data-topic-filter="၂။ စားပွဲပြည့်နေချိန် — စောင့်ဆိုင်းခြင်း">၂။ စားပွဲပြည့်နေချိန် — စောင့်ဆိုင်းခြင်း</button><button class="chip" data-topic-filter="၃။ ထိုင်ပြီးနောက် — Menu နှင့် စားသောက်ပုံ">၃။ ထိုင်ပြီးနောက် — Menu နှင့် စားသောက်ပုံ</button><button class="chip" data-topic-filter="၄။ အော်ဒါယူခြင်း — Customer ပြော၊ Waiter ပြန်အတည်ပြု">၄။ အော်ဒါယူခြင်း — Customer ပြော၊ Waiter ပြန်အတည်ပြု</button><button class="chip" data-topic-filter="၅။ အစပ်၊ ပါဝင်ပစ္စည်းနှင့် Allergy">၅။ အစပ်၊ ပါဝင်ပစ္စည်းနှင့် Allergy</button><button class="chip" data-topic-filter="၆။ BBQ ကင်ဝိုင်း — ကူညီခြင်းနှင့် ဘေးကင်းရေး">၆။ BBQ ကင်ဝိုင်း — ကူညီခြင်းနှင့် ဘေးကင်းရေး</button><button class="chip" data-topic-filter="၇။ အရံဟင်း၊ ရေ၊ ထမင်းနှင့် တူ/ဇွန်း">၇။ အရံဟင်း၊ ရေ၊ ထမင်းနှင့် တူ/ဇွန်း</button><button class="chip" data-topic-filter="၈။ အော်ဒါနောက်ကျခြင်း၊ ဟင်းမှားခြင်း၊ ပြန်လဲခြင်း">၈။ အော်ဒါနောက်ကျခြင်း၊ ဟင်းမှားခြင်း၊ ပြန်လဲခြင်း</button><button class="chip" data-topic-filter="၉။ ဘေလ်၊ ခွဲရှင်းခြင်း၊ ငွေပေးချေမှုနှင့် ပြေစာ">၉။ ဘေလ်၊ ခွဲရှင်းခြင်း၊ ငွေပေးချေမှုနှင့် ပြေစာ</button><button class="chip" data-topic-filter="၁၀။ Takeaway / ပါဆယ်">၁၀။ Takeaway / ပါဆယ်</button><button class="chip" data-topic-filter="၁၁။ အိမ်သာ၊ Wi-Fi၊ ကလေးထိုင်ခုံနှင့် အထွေထွေမေးခွန်းများ">၁၁။ အိမ်သာ၊ Wi-Fi၊ ကလေးထိုင်ခုံနှင့် အထွေထွေမေးခွန်းများ</button><button class="chip" data-topic-filter="၁၂။ Customer မကြား/Waiter မနားလည်ချိန်">၁၂။ Customer မကြား/Waiter မနားလည်ချိန်</button><button class="chip" data-topic-filter="၁၃။ Conflict / Complaint — ယဉ်ကျေးစွာ ဖြေရှင်းခြင်း">၁၃။ Conflict / Complaint — ယဉ်ကျေးစွာ ဖြေရှင်းခြင်း</button><button class="chip" data-topic-filter="၁၄။ Emergency — မီး၊ ပူလောင်မှု၊ Allergy reaction">၁၄။ Emergency — မီး၊ ပူလောင်မှု၊ Allergy reaction</button><button class="chip" data-topic-filter="၁၅။ နှုတ်ဆက်ခြင်းနှင့် ထွက်ခွာချိန်">၁၅။ နှုတ်ဆက်ခြင်းနှင့် ထွက်ခွာချိန်</button><button class="chip" data-topic-filter="Quick Rescue Lines — မမှတ်မိချိန်သုံးရန်">Quick Rescue Lines — မမှတ်မိချိန်သုံးရန်</button><button class="chip" data-topic-filter="လေ့ကျင့်ရန် အမှတ်ပေးစနစ်">လေ့ကျင့်ရန် အမှတ်ပေးစနစ်</button><button class="chip" data-topic-filter="၁၆။ စားပွဲပေါ်မှာ ရေ၊ လက်သုတ်ပဝါနှင့် ပန်းကန်ထပ်လိုခြင်း">၁၆။ စားပွဲပေါ်မှာ ရေ၊ လက်သုတ်ပဝါနှင့် ပန်းကန်ထပ်လိုခြင်း</button><button class="chip" data-topic-filter="၁၇။ အော်ဒါပြောင်းခြင်း / အပိုအော်ဒါမှာခြင်း">၁၇။ အော်ဒါပြောင်းခြင်း / အပိုအော်ဒါမှာခြင်း</button><button class="chip" data-topic-filter="၁၈။ အသားကျက်မှု / မီးကင်ချိန် မေးခြင်း">၁၈။ အသားကျက်မှု / မီးကင်ချိန် မေးခြင်း</button><button class="chip" data-topic-filter="၁၉။ မီးကင်ဇကာ / မီးအပူ ပြောင်းပေးရန်">၁၉။ မီးကင်ဇကာ / မီးအပူ ပြောင်းပေးရန်</button><button class="chip" data-topic-filter="၂၀။ သောက်စရာ ပြန်ဖြည့်ခြင်း / ရေခဲနှင့် သကြား">၂၀။ သောက်စရာ ပြန်ဖြည့်ခြင်း / ရေခဲနှင့် သကြား</button><button class="chip" data-topic-filter="၂၁။ ကလေး / အသက်ကြီးသူ / အထူးလိုအပ်ချက်">၂၁။ ကလေး / အသက်ကြီးသူ / အထူးလိုအပ်ချက်</button><button class="chip" data-topic-filter="၂၂။ ပစ္စည်းပျောက် / ဖုန်း၊ အိတ်၊ ထီး မေ့ကျန်ခြင်း">၂၂။ ပစ္စည်းပျောက် / ဖုန်း၊ အိတ်၊ ထီး မေ့ကျန်ခြင်း</button><button class="chip" data-topic-filter="၂၃။ Customer က မန်နေဂျာကို တွေ့ချင်ခြင်း">၂၃။ Customer က မန်နေဂျာကို တွေ့ချင်ခြင်း</button><button class="chip" data-topic-filter="၂၄။ အော်ဒါက ဘယ်လောက်ကြာမလဲ / ပြန်အသိပေးခြင်း">၂၄။ အော်ဒါက ဘယ်လောက်ကြာမလဲ / ပြန်အသိပေးခြင်း</button><button class="chip" data-topic-filter="၂၅။ အဆုံးမှာ ဘာမှမလိုတော့ကြောင်း အတည်ပြုခြင်း">၂၅။ အဆုံးမှာ ဘာမှမလိုတော့ကြောင်း အတည်ပြုခြင်း</button></div><div class="filters"><button class="chip active" data-role-filter="all">All roles</button><button class="chip" data-role-filter="waiter">Waiter only</button><button class="chip" data-role-filter="customer">Customer only</button></div></section><div class="summary"><span id="count"></span><span>Offline-ready PWA</span></div><div class="content"><section class="scenario" data-topic="Sae Ma Eul Korean BBQ · Puchong, Malaysia"><h2>Sae Ma Eul Korean BBQ · Puchong, Malaysia</h2><p>ဒီအပိုင်းသည် မူရင်း Restaurant Phrasebook ၏ နောက်ဆက်တွဲဖြစ်သည်။ Customer ဘက်မှ မေးမည့်စကားနှင့် Waiter ဘက်မှ မေး/ဖြေ/အတည်ပြုရမည့် စကားများကို အခြေအနေအလိုက် လေ့ကျင့်နိုင်ရန် စီစဉ်ထားသည်။</p>
+<h3>လေ့ကျင့်နည်း</h3>
+<ul>
+<li><strong>C = Customer / ဧည့်သည်</strong>၊ <strong>W = Waiter / ဝန်ထမ်း</strong> ဖြစ်သည်။</li>
+<li>ပထမအကြိမ်တွင် English ကို ဖတ်ပါ။ ဒုတိယအကြိမ်တွင် 中文 + Pinyin နှင့် Malay ကို ပြောင်းပြောပါ။ တတိယအကြိမ်တွင် မြန်မာအဓိပ္ပာယ်ကို ကြည့်ပြီး စာမကြည့်ဘဲ ပြောပါ။</li>
+<li>ဧည့်သည်တစ်ယောက်၊ ဝန်ထမ်းတစ်ယောက်၊ စောင့်ကြည့်သူတစ်ယောက်ဖြင့် လေ့ကျင့်ပါ။</li>
+<li>ဈေးနှုန်း၊ halal status၊ ပါဝင်ပစ္စည်း၊ buffet rule၊ လက်ရှိ menu ရှိ/မရှိကို မသေချာလျှင် မခန့်မှန်းပါနှင့်။ <strong>“Let me check with the kitchen or manager first.”</strong> ဟု ပြောပါ။</li>
+</ul>
+<hr /></section>
+<section class="scenario" data-topic="၁။ ဝင်လာချိန် — စားပွဲရှိ/မရှိနှင့် လူအရေအတွက်"><h2>၁။ ဝင်လာချိန် — စားပွဲရှိ/မရှိနှင့် လူအရေအတွက်</h2><p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> Hello, welcome to Sae Ma Eul BBQ. How many people are in your party?<br />
+<strong>中文:</strong> 您好，欢迎光临。请问一共几位？ <em>Nín hǎo, huānyíng guānglín. Qǐngwèn yígòng jǐ wèi?</em><br />
+<strong>BM:</strong> Hai, selamat datang ke Sae Ma Eul BBQ. Berapa orang ya?<br />
+<strong>မြန်မာ:</strong> မင်္ဂလာပါ၊ Sae Ma Eul BBQ မှ ကြိုဆိုပါတယ်။ လူဘယ်နှယောက်ပါလဲ။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> There are four of us. Do you have a table now?<br />
+<strong>中文:</strong> 我们四个人，现在有桌吗？ <em>Wǒmen sì gè rén, xiànzài yǒu zhuō ma?</em><br />
+<strong>BM:</strong> Kami berempat. Ada meja sekarang?<br />
+<strong>မြန်မာ:</strong> လေးယောက်ပါ။ အခု စားပွဲရလား။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> We have a table. This way, please.<br />
+<strong>中文:</strong> 有桌，请往这边走。 <em>Yǒu zhuō, qǐng wǎng zhèbiān zǒu.</em><br />
+<strong>BM:</strong> Ada meja. Sila ikut saya.<br />
+<strong>မြန်မာ:</strong> စားပွဲရှိပါတယ်။ ဒီဘက်ကို လိုက်ခဲ့ပါ။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> We have a reservation under the name Lee.<br />
+<strong>中文:</strong> 我们有预约，名字是李。 <em>Wǒmen yǒu yùyuē, míngzi shì Lǐ.</em><br />
+<strong>BM:</strong> Kami ada tempahan atas nama Lee.<br />
+<strong>မြန်မာ:</strong> Lee နာမည်နဲ့ ဘိုကင်ရှိပါတယ်။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> May I confirm the reservation name and number of guests?<br />
+<strong>中文:</strong> 可以确认预约名字和人数吗？ <em>Kěyǐ quèrèn yùyuē míngzi hé rénshù ma?</em><br />
+<strong>BM:</strong> Boleh saya sahkan nama tempahan dan jumlah tetamu?<br />
+<strong>မြန်မာ:</strong> ဘိုကင်နာမည်နဲ့ လူအရေအတွက်ကို အတည်ပြုလို့ရမလား။</p>
+<hr /></section>
+<section class="scenario" data-topic="၂။ စားပွဲပြည့်နေချိန် — စောင့်ဆိုင်းခြင်း"><h2>၂။ စားပွဲပြည့်နေချိန် — စောင့်ဆိုင်းခြင်း</h2><p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> How long will we have to wait?<br />
+<strong>中文:</strong> 我们要等多久？ <em>Wǒmen yào děng duō jiǔ?</em><br />
+<strong>BM:</strong> Berapa lama kami perlu menunggu?<br />
+<strong>မြန်မာ:</strong> ဘယ်လောက်ကြာ စောင့်ရမလဲ။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> The estimated wait is about twenty minutes. Would you like to wait?<br />
+<strong>中文:</strong> 预计要等大约二十分钟。您愿意等吗？ <em>Yùjì yào děng dàyuē èrshí fēnzhōng. Nín yuànyì děng ma?</em><br />
+<strong>BM:</strong> Anggaran menunggu kira-kira dua puluh minit. Anda mahu menunggu?<br />
+<strong>မြန်မာ:</strong> ခန့်မှန်းရင် မိနစ် ၂၀ လောက် စောင့်ရပါမယ်။ စောင့်ပေးနိုင်ပါသလား။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> Yes, please put our name on the waiting list.<br />
+<strong>中文:</strong> 好的，请把我们的名字写在等候名单上。 <em>Hǎo de, qǐng bǎ wǒmen de míngzi xiě zài děnghòu míngdān shàng.</em><br />
+<strong>BM:</strong> Ya, sila letakkan nama kami dalam senarai menunggu.<br />
+<strong>မြန်မာ:</strong> ဟုတ်ကဲ့၊ waiting list ထဲမှာ နာမည်ထည့်ပေးပါ။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> May I have your name and phone number? We will call you when the table is ready.<br />
+<strong>中文:</strong> 请问您的名字和电话号码？座位准备好后我们会通知您。 <em>Qǐngwèn nín de míngzi hé diànhuà hàomǎ? Zuòwèi zhǔnbèi hǎo hòu wǒmen huì tōngzhī nín.</em><br />
+<strong>BM:</strong> Boleh saya dapatkan nama dan nombor telefon? Kami akan hubungi apabila meja sedia.<br />
+<strong>မြန်မာ:</strong> နာမည်နဲ့ ဖုန်းနံပါတ် ပေးပါ။ စားပွဲရရင် ဖုန်းဆက်ပါမယ်။</p>
+<hr /></section>
+<section class="scenario" data-topic="၃။ ထိုင်ပြီးနောက် — Menu နှင့် စားသောက်ပုံ"><h2>၃။ ထိုင်ပြီးနောက် — Menu နှင့် စားသောက်ပုံ</h2><p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> Is this buffet or à la carte?<br />
+<strong>中文:</strong> 这是自助餐还是单点？ <em>Zhè shì zìzhùcān háishì dāndiǎn?</em><br />
+<strong>BM:</strong> Ini bufet atau à la carte?<br />
+<strong>မြန်မာ:</strong> ဒါက ဘူဖေးလား၊ တစ်ပွဲချင်းမှာတာလား။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> I’ll confirm the current buffet details, price, and time limit for you.<br />
+<strong>中文:</strong> 我帮您确认现在的自助餐详情、价格和用餐时限。 <em>Wǒ bāng nín quèrèn xiànzài de zìzhùcān xiángqíng, jiàgé hé yòngcān shíxiàn.</em><br />
+<strong>BM:</strong> Saya semak maklumat bufet, harga dan had masa semasa dahulu.<br />
+<strong>မြန်မာ:</strong> လက်ရှိ buffet အသေးစိတ်၊ ဈေးနှုန်းနဲ့ စားချိန်ကန့်သတ်ချက်ကို အရင်စစ်ပေးပါမယ်။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> Do you have a set for two people?<br />
+<strong>中文:</strong> 有两个人的套餐吗？ <em>Yǒu liǎng gè rén de tàocān ma?</em><br />
+<strong>BM:</strong> Ada set untuk dua orang?<br />
+<strong>မြန်မာ:</strong> လူနှစ်ယောက်စာ set ရှိပါသလား။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> Let me check today’s available sets and prices.<br />
+<strong>中文:</strong> 我先确认今天有的套餐和价格。 <em>Wǒ xiān quèrèn jīntiān yǒu de tàocān hé jiàgé.</em><br />
+<strong>BM:</strong> Saya semak set dan harga yang tersedia hari ini dahulu.<br />
+<strong>မြန်မာ:</strong> ဒီနေ့ ရနိုင်တဲ့ set နဲ့ ဈေးနှုန်းကို အရင်စစ်ပေးပါမယ်။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> What do you recommend for first-time visitors?<br />
+<strong>中文:</strong> 第一次来，您推荐什么？ <em>Dì yī cì lái, nín tuījiàn shénme?</em><br />
+<strong>BM:</strong> Apa yang anda cadangkan untuk pelanggan kali pertama?<br />
+<strong>မြန်မာ:</strong> ပထမဆုံးလာတဲ့သူအတွက် ဘာကို အကြံပြုချင်ပါသလဲ။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> I’ll recommend based on today’s menu and availability. Let me check first.<br />
+<strong>中文:</strong> 我会根据今天的菜单和供应情况推荐，我先确认一下。 <em>Wǒ huì gēnjù jīntiān de càidān hé gōngyìng qíngkuàng tuījiàn, wǒ xiān quèrèn yíxià.</em><br />
+<strong>BM:</strong> Saya semak menu dan ketersediaan hari ini dahulu sebelum mencadangkan.<br />
+<strong>မြန်မာ:</strong> ဒီနေ့ menu နဲ့ ရနိုင်တာကို စစ်ပြီးမှ အကြံပြုပေးပါမယ်။</p>
+<hr /></section>
+<section class="scenario" data-topic="၄။ အော်ဒါယူခြင်း — Customer ပြော၊ Waiter ပြန်အတည်ပြု"><h2>၄။ အော်ဒါယူခြင်း — Customer ပြော၊ Waiter ပြန်အတည်ပြု</h2><p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> Are you ready to order, or would you like a few more minutes?<br />
+<strong>中文:</strong> 可以点餐了吗？还是需要几分钟？ <em>Kěyǐ diǎn cān le ma? Háishì xūyào jǐ fēnzhōng?</em><br />
+<strong>BM:</strong> Boleh saya ambil pesanan, atau perlukan beberapa minit lagi?<br />
+<strong>မြန်မာ:</strong> အော်ဒါမှာဖို့ အဆင်သင့်ဖြစ်ပြီလား၊ မိနစ်အနည်းငယ် ထပ်လိုသေးလား။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> We need a few more minutes, please.<br />
+<strong>中文:</strong> 请给我们几分钟。 <em>Qǐng gěi wǒmen jǐ fēnzhōng.</em><br />
+<strong>BM:</strong> Beri kami beberapa minit lagi, ya.<br />
+<strong>မြန်မာ:</strong> မိနစ်အနည်းငယ် ထပ်ပေးပါ။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> Of course. Please take your time. I’ll come back shortly.<br />
+<strong>中文:</strong> 当然可以，请慢慢看。我一会儿再回来。 <em>Dāngrán kěyǐ, qǐng mànman kàn. Wǒ yíhuǐr zài huílái.</em><br />
+<strong>BM:</strong> Boleh. Silakan lihat dahulu, saya datang semula sebentar lagi.<br />
+<strong>မြန်မာ:</strong> ရပါတယ်။ အေးအေးဆေးဆေးကြည့်ပါ။ ခဏနေ ပြန်လာပါမယ်။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> We’d like two portions of pork belly, one beef, three bowls of rice, and four iced teas.<br />
+<strong>中文:</strong> 我们要两份五花肉、一份牛肉、三碗米饭和四杯冰茶。 <em>Wǒmen yào liǎng fèn wǔhuāròu, yí fèn niúròu, sān wǎn mǐfàn hé sì bēi bīngchá.</em><br />
+<strong>BM:</strong> Kami mahu dua perut babi, satu daging lembu, tiga nasi dan empat teh ais.<br />
+<strong>မြန်မာ:</strong> ဝက်သားဗိုက်သား နှစ်ပွဲ၊ အမဲသားတစ်ပွဲ၊ ထမင်းသုံးပန်းကန်နဲ့ ရေခဲလက်ဖက်ရည် လေးခွက်ယူမယ်။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> Let me repeat: two pork belly, one beef, three rice, and four iced teas. Is that correct?<br />
+<strong>中文:</strong> 我重复一下：两份五花肉、一份牛肉、三碗米饭和四杯冰茶，对吗？ <em>Wǒ chóngfù yíxià: liǎng fèn wǔhuāròu, yí fèn niúròu, sān wǎn mǐfàn hé sì bēi bīngchá, duì ma?</em><br />
+<strong>BM:</strong> Saya ulang: dua perut babi, satu daging lembu, tiga nasi dan empat teh ais, betul?<br />
+<strong>မြန်မာ:</strong> ပြန်အတည်ပြုပါမယ် — ဝက်သားနှစ်ပွဲ၊ အမဲသားတစ်ပွဲ၊ ထမင်းသုံးပန်းကန်နဲ့ ရေခဲလက်ဖက်ရည်လေးခွက် ဟုတ်ပါသလား။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> Yes, that’s correct.<br />
+<strong>中文:</strong> 对，没错。 <em>Duì, méi cuò.</em><br />
+<strong>BM:</strong> Ya, betul.<br />
+<strong>မြန်မာ:</strong> ဟုတ်ကဲ့၊ မှန်ပါတယ်။</p>
+<hr /></section>
+<section class="scenario" data-topic="၅။ အစပ်၊ ပါဝင်ပစ္စည်းနှင့် Allergy"><h2>၅။ အစပ်၊ ပါဝင်ပစ္စည်းနှင့် Allergy</h2><p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> Is this dish spicy?<br />
+<strong>中文:</strong> 这道菜辣吗？ <em>Zhè dào cài là ma?</em><br />
+<strong>BM:</strong> Hidangan ini pedas?<br />
+<strong>မြန်မာ:</strong> ဒီဟင်းက စပ်ပါသလား။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> I’ll check the spice level with the kitchen.<br />
+<strong>中文:</strong> 我先向厨房确认辣度。 <em>Wǒ xiān xiàng chúfáng quèrèn làdù.</em><br />
+<strong>BM:</strong> Saya semak tahap kepedasan dengan dapur dahulu.<br />
+<strong>မြန်မာ:</strong> အစပ်အဆင့်ကို မီးဖိုချောင်နဲ့ အရင်စစ်ပေးပါမယ်။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> I have a peanut allergy. Does this contain peanuts?<br />
+<strong>中文:</strong> 我对花生过敏，这里面有花生吗？ <em>Wǒ duì huāshēng guòmǐn, zhèlǐmiàn yǒu huāshēng ma?</em><br />
+<strong>BM:</strong> Saya alah kacang tanah. Adakah hidangan ini mengandungi kacang tanah?<br />
+<strong>မြန်မာ:</strong> မြေပဲနဲ့ ဓာတ်မတည့်ပါဘူး။ ဒီထဲမှာ မြေပဲပါသလား။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> Thank you for telling me. I won’t guess. Let me check the ingredients and preparation with the kitchen.<br />
+<strong>中文:</strong> 谢谢您告诉我。我不会猜测，我先和厨房确认食材和制作方式。 <em>Xièxie nín gàosu wǒ. Wǒ bú huì cāicè, wǒ xiān hé chúfáng quèrèn shícái hé zhìzuò fāngshì.</em><br />
+<strong>BM:</strong> Terima kasih kerana memberitahu saya. Saya tidak mahu membuat andaian. Saya semak bahan dan cara penyediaan dengan dapur dahulu.<br />
+<strong>မြန်မာ:</strong> ပြောပြပေးတာ ကျေးဇူးပါ။ မခန့်မှန်းဘဲ ပါဝင်ပစ္စည်းနဲ့ ချက်ပြုတ်ပုံကို မီးဖိုချောင်နဲ့ စစ်ပေးပါမယ်။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> I cannot eat pork. Is this halal?<br />
+<strong>中文:</strong> 我不能吃猪肉，这是清真的吗？ <em>Wǒ bù néng chī zhūròu, zhè shì qīngzhēn de ma?</em><br />
+<strong>BM:</strong> Saya tidak boleh makan daging babi. Ini halal?<br />
+<strong>မြန်မာ:</strong> ဝက်သားမစားနိုင်ပါဘူး။ ဒါက halal လား။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> I’ll confirm with the manager before I answer. Please give me a moment.<br />
+<strong>中文:</strong> 我回答前先和经理确认，请稍等。 <em>Wǒ huídá qián xiān hé jīnglǐ quèrèn, qǐng shāo děng.</em><br />
+<strong>BM:</strong> Saya sahkan dengan pengurus dahulu sebelum menjawab. Sila tunggu sebentar.<br />
+<strong>မြန်မာ:</strong> မဖြေခင် မန်နေဂျာနဲ့ အရင်အတည်ပြုပါမယ်။ ခဏစောင့်ပေးပါ။</p>
+<hr /></section>
+<section class="scenario" data-topic="၆။ BBQ ကင်ဝိုင်း — ကူညီခြင်းနှင့် ဘေးကင်းရေး"><h2>၆။ BBQ ကင်ဝိုင်း — ကူညီခြင်းနှင့် ဘေးကင်းရေး</h2><p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> Could you help us start the grill?<br />
+<strong>中文:</strong> 可以帮我们开始烤吗？ <em>Kěyǐ bāng wǒmen kāishǐ kǎo ma?</em><br />
+<strong>BM:</strong> Boleh bantu kami mula memanggang?<br />
+<strong>မြန်မာ:</strong> မီးကင်စဖို့ ကူညီပေးလို့ရမလား။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> Certainly. Please keep your hands away from the hot grill.<br />
+<strong>中文:</strong> 当然可以，请把手离烤炉远一点。 <em>Dāngrán kěyǐ, qǐng bǎ shǒu lí kǎolú yuǎn yìdiǎn.</em><br />
+<strong>BM:</strong> Boleh. Sila jauhkan tangan daripada pemanggang panas.<br />
+<strong>မြန်မာ:</strong> ရပါတယ်။ ပူတဲ့မီးကင်နဲ့ လက်ကို ဝေးဝေးထားပေးပါ။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> May I help you cut the meat?<br />
+<strong>中文:</strong> 我帮您剪肉，好吗？ <em>Wǒ bāng nín jiǎn ròu, hǎo ma?</em><br />
+<strong>BM:</strong> Boleh saya potong daging untuk anda?<br />
+<strong>မြန်မာ:</strong> အသားလှီးပေးရမလား။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> Yes, please. The grill is smoking a lot.<br />
+<strong>中文:</strong> 好的，谢谢。烤炉冒很多烟。 <em>Hǎo de, xièxie. Kǎolú mào hěn duō yān.</em><br />
+<strong>BM:</strong> Ya, sila. Pemanggang mengeluarkan banyak asap.<br />
+<strong>မြန်မာ:</strong> ဟုတ်ကဲ့၊ ကျေးဇူးပါ။ မီးကင်က မီးခိုးအရမ်းထွက်နေတယ်။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> I’ll adjust the heat and change the grill mesh if needed.<br />
+<strong>中文:</strong> 我先调低火力，需要的话再换烤网。 <em>Wǒ xiān tiáo dī huǒlì, xūyào de huà zài huàn kǎowǎng.</em><br />
+<strong>BM:</strong> Saya kecilkan api dan tukar jaringan pemanggang jika perlu.<br />
+<strong>မြန်မာ:</strong> မီးအပူလျှော့ပြီး လိုအပ်ရင် မီးကင်ဇကာ လဲပေးပါမယ်။</p>
+<hr /></section>
+<section class="scenario" data-topic="၇။ အရံဟင်း၊ ရေ၊ ထမင်းနှင့် တူ/ဇွန်း"><h2>၇။ အရံဟင်း၊ ရေ၊ ထမင်းနှင့် တူ/ဇွန်း</h2><p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> Could we have more kimchi and side dishes, please?<br />
+<strong>中文:</strong> 可以再给我们泡菜和小菜吗？ <em>Kěyǐ zài gěi wǒmen pàocài hé xiǎocài ma?</em><br />
+<strong>BM:</strong> Boleh tambah kimchi dan lauk sampingan?<br />
+<strong>မြန်မာ:</strong> ကင်မ်ချီနဲ့ အရံဟင်းတွေ ထပ်ပေးလို့ရမလား။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> Of course. I’ll bring them to you.<br />
+<strong>中文:</strong> 当然可以，我马上拿给您。 <em>Dāngrán kěyǐ, wǒ mǎshàng ná gěi nín.</em><br />
+<strong>BM:</strong> Boleh, saya bawakan sekarang.<br />
+<strong>မြန်မာ:</strong> ရပါတယ်၊ အခု ယူလာပေးပါမယ်။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> We need two more bowls of rice and some water.<br />
+<strong>中文:</strong> 我们要两碗米饭和一些水。 <em>Wǒmen yào liǎng wǎn mǐfàn hé yìxiē shuǐ.</em><br />
+<strong>BM:</strong> Kami mahu dua nasi lagi dan air.<br />
+<strong>မြန်မာ:</strong> ထမင်းနှစ်ပန်းကန်နဲ့ ရေနည်းနည်း ထပ်လိုပါတယ်။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> Two bowls of rice and water, correct? I’ll bring them shortly.<br />
+<strong>中文:</strong> 两碗米饭和水，对吗？我马上拿来。 <em>Liǎng wǎn mǐfàn hé shuǐ, duì ma? Wǒ mǎshàng ná lái.</em><br />
+<strong>BM:</strong> Dua nasi dan air, betul? Saya bawakan sebentar lagi.<br />
+<strong>မြန်မာ:</strong> ထမင်းနှစ်ပန်းကန်နဲ့ ရေ ဟုတ်ပါသလား။ ခဏနေ ယူလာပေးပါမယ်။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> Could we have extra spoons and chopsticks?<br />
+<strong>中文:</strong> 可以给我们多一些勺子和筷子吗？ <em>Kěyǐ gěi wǒmen duō yìxiē sháozi hé kuàizi ma?</em><br />
+<strong>BM:</strong> Boleh beri sudu dan penyepit tambahan?<br />
+<strong>မြန်မာ:</strong> ဇွန်းနဲ့ တူ အပိုပေးလို့ရမလား။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> Yes, I’ll bring them now.<br />
+<strong>中文:</strong> 可以，我现在拿来。 <em>Kěyǐ, wǒ xiànzài ná lái.</em><br />
+<strong>BM:</strong> Boleh, saya bawakan sekarang.<br />
+<strong>မြန်မာ:</strong> ရပါတယ်၊ အခု ယူလာပေးပါမယ်။</p>
+<hr /></section>
+<section class="scenario" data-topic="၈။ အော်ဒါနောက်ကျခြင်း၊ ဟင်းမှားခြင်း၊ ပြန်လဲခြင်း"><h2>၈။ အော်ဒါနောက်ကျခြင်း၊ ဟင်းမှားခြင်း၊ ပြန်လဲခြင်း</h2><p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> We’ve been waiting for our order for a long time.<br />
+<strong>中文:</strong> 我们等订单等了很久。 <em>Wǒmen děng dìngdān děng le hěn jiǔ.</em><br />
+<strong>BM:</strong> Kami sudah lama menunggu pesanan.<br />
+<strong>မြန်မာ:</strong> အော်ဒါကို အချိန်တော်တော်ကြာ စောင့်နေပါပြီ။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> I’m very sorry. I’ll check your order with the kitchen right now.<br />
+<strong>中文:</strong> 很抱歉。我现在马上和厨房确认您的订单。 <em>Hěn bàoqiàn. Wǒ xiànzài mǎshàng hé chúfáng quèrèn nín de dìngdān.</em><br />
+<strong>BM:</strong> Maaf kerana menunggu lama. Saya semak pesanan dengan dapur sekarang.<br />
+<strong>မြန်မာ:</strong> စောင့်ရတာကြာသွားလို့ တောင်းပန်ပါတယ်။ အခု မီးဖိုချောင်နဲ့ ချက်ချင်း စစ်ပေးပါမယ်။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> This is not what we ordered.<br />
+<strong>中文:</strong> 这不是我们点的。 <em>Zhè bú shì wǒmen diǎn de.</em><br />
+<strong>BM:</strong> Ini bukan yang kami pesan.<br />
+<strong>မြန်မာ:</strong> ဒါက ကျွန်တော်တို့မှာထားတာ မဟုတ်ပါဘူး။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> I’m sorry about that. Let me compare it with your order and fix it now.<br />
+<strong>中文:</strong> 不好意思。我先和订单核对，现在马上帮您处理。 <em>Bù hǎoyìsi. Wǒ xiān hé dìngdān héduì, xiànzài mǎshàng bāng nín chǔlǐ.</em><br />
+<strong>BM:</strong> Maaf atas kesilapan itu. Saya semak dengan pesanan dan betulkan sekarang.<br />
+<strong>မြန်မာ:</strong> မှားသွားတာ တောင်းပန်ပါတယ်။ အော်ဒါနဲ့ တိုက်စစ်ပြီး အခု ပြန်ဖြေရှင်းပေးပါမယ်။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> Can we cancel this item?<br />
+<strong>中文:</strong> 这道菜可以取消吗？ <em>Zhè dào cài kěyǐ qǔxiāo ma?</em><br />
+<strong>BM:</strong> Boleh batalkan hidangan ini?<br />
+<strong>မြန်မာ:</strong> ဒီဟင်းကို cancel လုပ်လို့ရမလား။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> I’ll check whether it has already been prepared. I’ll confirm with you.<br />
+<strong>中文:</strong> 我先确认是否已经制作，再回复您。 <em>Wǒ xiān quèrèn shìfǒu yǐjīng zhìzuò, zài huífù nín.</em><br />
+<strong>BM:</strong> Saya semak dahulu sama ada ia sudah disediakan, kemudian saya maklumkan.<br />
+<strong>မြန်မာ:</strong> ချက်ပြီးပြီလား မီးဖိုချောင်နဲ့ စစ်ပြီး ပြန်အသိပေးပါမယ်။</p>
+<hr /></section>
+<section class="scenario" data-topic="၉။ ဘေလ်၊ ခွဲရှင်းခြင်း၊ ငွေပေးချေမှုနှင့် ပြေစာ"><h2>၉။ ဘေလ်၊ ခွဲရှင်းခြင်း၊ ငွေပေးချေမှုနှင့် ပြေစာ</h2><p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> Could we have the bill, please?<br />
+<strong>中文:</strong> 请给我们账单。 <em>Qǐng gěi wǒmen zhàngdān.</em><br />
+<strong>BM:</strong> Boleh beri bil, please?<br />
+<strong>မြန်မာ:</strong> ဘေလ်ပေးပါ။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> Certainly. I’ll bring the bill and check it before giving it to you.<br />
+<strong>中文:</strong> 当然可以。我先确认账单，再拿给您。 <em>Dāngrán kěyǐ. Wǒ xiān quèrèn zhàngdān, zài ná gěi nín.</em><br />
+<strong>BM:</strong> Boleh. Saya semak bil dahulu sebelum membawanya kepada anda.<br />
+<strong>မြန်မာ:</strong> ရပါတယ်။ ဘေလ်ကို အရင်စစ်ပြီး ယူလာပေးပါမယ်။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> Can we split the bill?<br />
+<strong>中文:</strong> 可以分开付款吗？ <em>Kěyǐ fēnkāi fùkuǎn ma?</em><br />
+<strong>BM:</strong> Boleh bayar berasingan?<br />
+<strong>မြန်မာ:</strong> ဘေလ်ခွဲရှင်းလို့ရမလား။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> I’ll check the payment policy and confirm the available options.<br />
+<strong>中文:</strong> 我先确认付款规定和可用的方式。 <em>Wǒ xiān quèrèn fùkuǎn guīdìng hé kěyòng de fāngshì.</em><br />
+<strong>BM:</strong> Saya semak peraturan dan pilihan pembayaran dahulu.<br />
+<strong>မြန်မာ:</strong> ငွေပေးချေမှုစည်းမျဉ်းနဲ့ ရနိုင်တဲ့နည်းလမ်းကို အရင်စစ်ပေးပါမယ်။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> Do you accept cards or QR payment?<br />
+<strong>中文:</strong> 可以刷卡或用二维码付款吗？ <em>Kěyǐ shuākǎ huò yòng èrwéimǎ fùkuǎn ma?</em><br />
+<strong>BM:</strong> Boleh bayar dengan kad atau QR?<br />
+<strong>မြန်မာ:</strong> ကတ်နဲ့ ဒါမှမဟုတ် QR နဲ့ ငွေပေးလို့ရလား။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> Let me confirm which payment methods are available today.<br />
+<strong>中文:</strong> 我确认一下今天可以使用哪些付款方式。 <em>Wǒ quèrèn yíxià jīntiān kěyǐ shǐyòng nǎxiē fùkuǎn fāngshì.</em><br />
+<strong>BM:</strong> Saya semak kaedah pembayaran yang tersedia hari ini.<br />
+<strong>မြန်မာ:</strong> ဒီနေ့ ရနိုင်တဲ့ ငွေပေးချေနည်းတွေကို အရင်စစ်ပါမယ်။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> Would you like a receipt?<br />
+<strong>中文:</strong> 需要收据吗？ <em>Xūyào shōujù ma?</em><br />
+<strong>BM:</strong> Mahu resit?<br />
+<strong>မြန်မာ:</strong> ပြေစာယူမလား။</p>
+<hr /></section>
+<section class="scenario" data-topic="၁၀။ Takeaway / ပါဆယ်"><h2>၁၀။ Takeaway / ပါဆယ်</h2><p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> Can we pack the remaining food to take away?<br />
+<strong>中文:</strong> 剩下的食物可以打包吗？ <em>Shèngxià de shíwù kěyǐ dǎbāo ma?</em><br />
+<strong>BM:</strong> Boleh bungkus makanan yang berbaki?<br />
+<strong>မြန်မာ:</strong> ကျန်တဲ့အစားအစာကို ပါဆယ်ထုပ်လို့ရမလား။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> I’ll check the takeaway policy and prepare it for you if allowed.<br />
+<strong>中文:</strong> 我先确认打包规定，如果可以就帮您准备。 <em>Wǒ xiān quèrèn dǎbāo guīdìng, rúguǒ kěyǐ jiù bāng nín zhǔnbèi.</em><br />
+<strong>BM:</strong> Saya semak peraturan bungkus dahulu. Jika dibenarkan, saya sediakan untuk anda.<br />
+<strong>မြန်မာ:</strong> ပါဆယ်စည်းမျဉ်းကို အရင်စစ်ပြီး ရရင် ထုပ်ပေးပါမယ်။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> We’d like to place a takeaway order for two portions.<br />
+<strong>中文:</strong> 我们想外带两份。 <em>Wǒmen xiǎng wàidài liǎng fèn.</em><br />
+<strong>BM:</strong> Kami mahu pesan dua hidangan untuk dibawa pulang.<br />
+<strong>မြန်မာ:</strong> နှစ်ပွဲ ပါဆယ်မှာချင်ပါတယ်။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> May I confirm the items, quantity, name, and contact number?<br />
+<strong>中文:</strong> 可以确认菜名、数量、姓名和电话号码吗？ <em>Kěyǐ quèrèn càimíng, shùliàng, xìngmíng hé diànhuà hàomǎ ma?</em><br />
+<strong>BM:</strong> Boleh saya sahkan hidangan, kuantiti, nama dan nombor telefon?<br />
+<strong>မြန်မာ:</strong> ဟင်းအမည်၊ အရေအတွက်၊ နာမည်နဲ့ ဖုန်းနံပါတ်ကို အတည်ပြုလို့ရမလား။</p>
+<hr /></section>
+<section class="scenario" data-topic="၁၁။ အိမ်သာ၊ Wi-Fi၊ ကလေးထိုင်ခုံနှင့် အထွေထွေမေးခွန်းများ"><h2>၁၁။ အိမ်သာ၊ Wi-Fi၊ ကလေးထိုင်ခုံနှင့် အထွေထွေမေးခွန်းများ</h2><p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> Excuse me, where is the restroom?<br />
+<strong>中文:</strong> 请问洗手间在哪里？ <em>Qǐngwèn xǐshǒujiān zài nǎlǐ?</em><br />
+<strong>BM:</strong> Tandas di mana?<br />
+<strong>မြန်မာ:</strong> အိမ်သာ ဘယ်မှာလဲ။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> It’s over there, on the left.<br />
+<strong>中文:</strong> 在那边，左手边。 <em>Zài nàbiān, zuǒshǒu biān.</em><br />
+<strong>BM:</strong> Di sana, sebelah kiri.<br />
+<strong>မြန်မာ:</strong> ဟိုဘက် ဘယ်ဘက်မှာပါ။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> Do you have a high chair for a child?<br />
+<strong>中文:</strong> 有儿童餐椅吗？ <em>Yǒu értóng cānyǐ ma?</em><br />
+<strong>BM:</strong> Ada kerusi bayi?<br />
+<strong>မြန်မာ:</strong> ကလေးထိုင်ခုံ ရှိပါသလား။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> I’ll check and bring one if available.<br />
+<strong>中文:</strong> 我确认一下，如果有就拿给您。 <em>Wǒ quèrèn yíxià, rúguǒ yǒu jiù ná gěi nín.</em><br />
+<strong>BM:</strong> Saya semak dahulu dan bawakan jika ada.<br />
+<strong>မြန်မာ:</strong> အရင်စစ်ပြီး ရှိရင် ယူလာပေးပါမယ်။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> Is there Wi-Fi here?<br />
+<strong>中文:</strong> 这里有 Wi-Fi 吗？ <em>Zhèlǐ yǒu Wi-Fi ma?</em><br />
+<strong>BM:</strong> Ada Wi-Fi di sini?<br />
+<strong>မြန်မာ:</strong> ဒီမှာ Wi-Fi ရှိလား။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> I’ll confirm the current Wi-Fi details for you.<br />
+<strong>中文:</strong> 我帮您确认现在的 Wi-Fi 信息。 <em>Wǒ bāng nín quèrèn xiànzài de Wi-Fi xìnxī.</em><br />
+<strong>BM:</strong> Saya semak maklumat Wi-Fi semasa dahulu.<br />
+<strong>မြန်မာ:</strong> လက်ရှိ Wi-Fi အချက်အလက်ကို အရင်စစ်ပေးပါမယ်။</p>
+<hr /></section>
+<section class="scenario" data-topic="၁၂။ Customer မကြား/Waiter မနားလည်ချိန်"><h2>၁၂။ Customer မကြား/Waiter မနားလည်ချိန်</h2><p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> Sorry, could you say that again more slowly?<br />
+<strong>中文:</strong> 不好意思，可以说慢一点吗？ <em>Bù hǎoyìsi, kěyǐ shuō màn yìdiǎn ma?</em><br />
+<strong>BM:</strong> Maaf, boleh cakap lebih perlahan?<br />
+<strong>မြန်မာ:</strong> တောင်းပန်ပါတယ်၊ နည်းနည်း ဖြည်းဖြည်း ပြောပေးလို့ရမလား။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> Of course. I’ll speak slowly.<br />
+<strong>中文:</strong> 当然可以，我说慢一点。 <em>Dāngrán kěyǐ, wǒ shuō màn yìdiǎn.</em><br />
+<strong>BM:</strong> Boleh, saya akan cakap perlahan.<br />
+<strong>မြန်မာ:</strong> ရပါတယ်၊ ဖြည်းဖြည်း ပြောပါမယ်။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> Could you point to the item on the menu?<br />
+<strong>中文:</strong> 您可以指一下菜单上的菜吗？ <em>Nín kěyǐ zhǐ yíxià càidān shàng de cài ma?</em><br />
+<strong>BM:</strong> Boleh tunjuk hidangan itu dalam menu?<br />
+<strong>မြန်မာ:</strong> Menu ထဲက ဟင်းကို လက်ညှိုးထိုးပြပေးလို့ရမလား။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> Yes, this one.<br />
+<strong>中文:</strong> 是这个。 <em>Shì zhège.</em><br />
+<strong>BM:</strong> Ya, yang ini.<br />
+<strong>မြန်မာ:</strong> ဟုတ်ကဲ့၊ ဒီဟင်းပါ။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> One moment, please. I’ll confirm it for you.<br />
+<strong>中文:</strong> 请稍等，我帮您确认一下。 <em>Qǐng shāo děng, wǒ bāng nín quèrèn yíxià.</em><br />
+<strong>BM:</strong> Tunggu sebentar, saya semak dahulu.<br />
+<strong>မြန်မာ:</strong> ခဏစောင့်ပေးပါ၊ အရင်စစ်ပေးပါမယ်။</p>
+<hr /></section>
+<section class="scenario" data-topic="၁၃။ Conflict / Complaint — ယဉ်ကျေးစွာ ဖြေရှင်းခြင်း"><h2>၁၃။ Conflict / Complaint — ယဉ်ကျေးစွာ ဖြေရှင်းခြင်း</h2><p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> The service is too slow and we are unhappy.<br />
+<strong>中文:</strong> 服务太慢了，我们不满意。 <em>Fúwù tài màn le, wǒmen bù mǎnyì.</em><br />
+<strong>BM:</strong> Perkhidmatan terlalu lambat dan kami tidak puas hati.<br />
+<strong>မြန်မာ:</strong> ဝန်ဆောင်မှု အရမ်းနောက်ကျလို့ မကျေနပ်ပါဘူး။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> I understand this is frustrating. I’m sorry. I’ll check the order now and update you shortly.<br />
+<strong>中文:</strong> 我明白这让您很不满意，对不起。我现在确认订单，很快向您更新。 <em>Wǒ míngbái zhè ràng nín hěn bù mǎnyì, duìbuqǐ. Wǒ xiànzài quèrèn dìngdān, hěn kuài xiàng nín gēngxīn.</em><br />
+<strong>BM:</strong> Saya faham ini mengecewakan. Maaf. Saya semak pesanan sekarang dan akan maklumkan sebentar lagi.<br />
+<strong>မြန်မာ:</strong> ဒီအခြေအနေက စိတ်မကောင်းဖြစ်စေတယ်ဆိုတာ နားလည်ပါတယ်။ တောင်းပန်ပါတယ်။ အခု အော်ဒါကို စစ်ပြီး ခဏနေရင် ပြန်အသိပေးပါမယ်။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> This dish is cold.<br />
+<strong>中文:</strong> 这道菜是冷的。 <em>Zhè dào cài shì lěng de.</em><br />
+<strong>BM:</strong> Hidangan ini sejuk.<br />
+<strong>မြန်မာ:</strong> ဒီဟင်းက အေးနေပါတယ်။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> I’m sorry. I’ll inform the kitchen and check the best solution with my manager.<br />
+<strong>中文:</strong> 对不起。我通知厨房，并和经理确认最好的处理方法。 <em>Duìbuqǐ. Wǒ tōngzhī chúfáng, bìng hé jīnglǐ quèrèn zuì hǎo de chǔlǐ fāngfǎ.</em><br />
+<strong>BM:</strong> Maaf. Saya maklumkan kepada dapur dan semak penyelesaian terbaik dengan pengurus.<br />
+<strong>မြန်မာ:</strong> တောင်းပန်ပါတယ်။ မီးဖိုချောင်ကို အသိပေးပြီး မန်နေဂျာနဲ့ အကောင်းဆုံးဖြေရှင်းနည်းကို စစ်ပေးပါမယ်။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> Thank you for telling us. We will take care of it.<br />
+<strong>中文:</strong> 谢谢您告诉我们，我们会处理好。 <em>Xièxie nín gàosu wǒmen, wǒmen huì chǔlǐ hǎo.</em><br />
+<strong>BM:</strong> Terima kasih kerana memberitahu kami. Kami akan uruskan.<br />
+<strong>မြန်မာ:</strong> ပြောပြပေးတာ ကျေးဇူးပါ။ သေချာ ဖြေရှင်းပေးပါမယ်။</p>
+<blockquote>
+<p><strong>Safety:</strong> Guest က အော်ဟစ်ခြိမ်းခြောက်ခြင်း၊ ကိုယ်ထိလက်ရောက်ပြုခြင်းရှိလျှင် မပြန်ရန်ဖြစ်ပါနှင့်။ အခြားဧည့်သည်များကို ဘေးကင်းရာသို့ ရွှေ့ပြီး Manager/Security ကို ချက်ချင်းခေါ်ပါ။</p>
+</blockquote>
+<hr /></section>
+<section class="scenario" data-topic="၁၄။ Emergency — မီး၊ ပူလောင်မှု၊ Allergy reaction"><h2>၁၄။ Emergency — မီး၊ ပူလောင်မှု၊ Allergy reaction</h2><p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> Please stay calm and move away from the grill. I’m calling my manager now.<br />
+<strong>中文:</strong> 请保持冷静，先离开烤炉。我现在马上叫经理。 <em>Qǐng bǎochí lěngjìng, xiān líkāi kǎolú. Wǒ xiànzài mǎshàng jiào jīnglǐ.</em><br />
+<strong>BM:</strong> Sila bertenang dan berundur dari pemanggang. Saya panggil pengurus sekarang.<br />
+<strong>မြန်မာ:</strong> စိတ်အေးအေးထားပြီး မီးကင်နားကနေ နောက်ဆုတ်ပေးပါ။ အခု မန်နေဂျာကို ခေါ်လိုက်ပါမယ်။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> I burned my hand.<br />
+<strong>中文:</strong> 我的手烫伤了。 <em>Wǒ de shǒu tàngshāng le.</em><br />
+<strong>BM:</strong> Tangan saya melecur.<br />
+<strong>မြန်မာ:</strong> လက်ပူလောင်သွားတယ်။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> Are you hurt badly? I’ll call my manager and get first-aid help.<br />
+<strong>中文:</strong> 伤得严重吗？我马上叫经理并找急救用品。 <em>Shāng de yánzhòng ma? Wǒ mǎshàng jiào jīnglǐ bìng zhǎo jíjiù yòngpǐn.</em><br />
+<strong>BM:</strong> Adakah kecederaan serius? Saya panggil pengurus dan dapatkan bantuan pertolongan cemas.<br />
+<strong>မြန်မာ:</strong> ဒဏ်ရာပြင်းထန်လား။ မန်နေဂျာကို ခေါ်ပြီး first-aid အကူအညီ ယူလာပေးပါမယ်။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> I’m having trouble breathing after eating this.<br />
+<strong>中文:</strong> 吃了这个以后，我呼吸困难。 <em>Chī le zhège yǐhòu, wǒ hūxī kùnnán.</em><br />
+<strong>BM:</strong> Saya susah bernafas selepas makan ini.<br />
+<strong>မြန်မာ:</strong> ဒါစားပြီး အသက်ရှူရခက်နေတယ်။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> I’m calling emergency help and my manager now. Please stay with me.<br />
+<strong>中文:</strong> 我现在马上叫急救人员和经理。请跟我待在这里。 <em>Wǒ xiànzài mǎshàng jiào jíjiù rényuán hé jīnglǐ. Qǐng gēn wǒ dāi zài zhèlǐ.</em><br />
+<strong>BM:</strong> Saya panggil bantuan kecemasan dan pengurus sekarang. Sila kekal bersama saya.<br />
+<strong>မြန်မာ:</strong> အရေးပေါ်အကူအညီနဲ့ မန်နေဂျာကို အခုခေါ်နေပါပြီ။ ကျွန်တော်နဲ့အတူ ဒီမှာနေပါ။</p>
+<blockquote>
+<p>မီး၊ အသက်ရှူခက်ခြင်း၊ သတိလစ်ခြင်း၊ သွေးထွက်များခြင်းတို့တွင် ဆိုင်၏ emergency procedure အတိုင်း ချက်ချင်းဆောင်ရွက်ပါ။ လိုအပ်ပါက မလေးရှားအရေးပေါ်နံပါတ် 999 ကို ဆိုင်မူဝါဒအတိုင်း ခေါ်ပါ။ မလေ့ကျင့်ထားဘဲ ဆေးမပေးပါနှင့်၊ လူကို မဆွဲဖယ်ပါနှင့်။</p>
+</blockquote>
+<hr /></section>
+<section class="scenario" data-topic="၁၅။ နှုတ်ဆက်ခြင်းနှင့် ထွက်ခွာချိန်"><h2>၁၅။ နှုတ်ဆက်ခြင်းနှင့် ထွက်ခွာချိန်</h2><p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> Was everything alright today?<br />
+<strong>中文:</strong> 今天用餐还满意吗？ <em>Jīntiān yòngcān hái mǎnyì ma?</em><br />
+<strong>BM:</strong> Adakah semuanya memuaskan hari ini?<br />
+<strong>မြန်မာ:</strong> ဒီနေ့ အားလုံး အဆင်ပြေပါသလား။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> Yes, thank you. The food was good.<br />
+<strong>中文:</strong> 很满意，谢谢。食物很好吃。 <em>Hěn mǎnyì, xièxie. Shíwù hěn hǎochī.</em><br />
+<strong>BM:</strong> Ya, terima kasih. Makanannya sedap.<br />
+<strong>မြန်မာ:</strong> ဟုတ်ကဲ့၊ ကျေးဇူးပါ။ အစားအစာကောင်းပါတယ်။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> Thank you very much. Have a nice day and we hope to see you again.<br />
+<strong>中文:</strong> 非常感谢，祝您愉快，欢迎下次再来。 <em>Fēicháng gǎnxiè, zhù nín yúkuài, huānyíng xiàcì zài lái.</em><br />
+<strong>BM:</strong> Terima kasih banyak. Semoga hari anda menyenangkan. Jumpa lagi.<br />
+<strong>မြန်မာ:</strong> အများကြီး ကျေးဇူးတင်ပါတယ်။ ကောင်းသောနေ့လေးဖြစ်ပါစေ။ နောက်တစ်ခါ ပြန်လာခဲ့ပါ။</p>
+<hr /></section>
+<section class="scenario" data-topic="Quick Rescue Lines — မမှတ်မိချိန်သုံးရန်"><h2>Quick Rescue Lines — မမှတ်မိချိန်သုံးရန်</h2><table>
+<thead>
+<tr>
+<th>English</th>
+<th>中文 + Pinyin</th>
+<th>Bahasa Melayu</th>
+<th>မြန်မာ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>One moment, please.</td>
+<td>请稍等。<em>Qǐng shāo děng.</em></td>
+<td>Tunggu sebentar.</td>
+<td>ခဏစောင့်ပေးပါ။</td>
+</tr>
+<tr>
+<td>Could you repeat that, please?</td>
+<td>请再说一次。<em>Qǐng zài shuō yí cì.</em></td>
+<td>Boleh ulang sekali lagi?</td>
+<td>တစ်ခါထပ်ပြောပေးပါ။</td>
+</tr>
+<tr>
+<td>Please speak slowly.</td>
+<td>请说慢一点。<em>Qǐng shuō màn yìdiǎn.</em></td>
+<td>Sila cakap perlahan.</td>
+<td>ဖြည်းဖြည်းပြောပေးပါ။</td>
+</tr>
+<tr>
+<td>Let me check with the kitchen.</td>
+<td>我先问厨房。<em>Wǒ xiān wèn chúfáng.</em></td>
+<td>Saya semak dengan dapur dahulu.</td>
+<td>မီးဖိုချောင်ကို အရင်မေးပါမယ်။</td>
+</tr>
+<tr>
+<td>I’ll confirm with my manager.</td>
+<td>我先和经理确认。<em>Wǒ xiān hé jīnglǐ quèrèn.</em></td>
+<td>Saya sahkan dengan pengurus dahulu.</td>
+<td>မန်နေဂျာနဲ့ အရင်အတည်ပြုပါမယ်။</td>
+</tr>
+<tr>
+<td>I’m sorry about that.</td>
+<td>不好意思。<em>Bù hǎoyìsi.</em></td>
+<td>Maaf ya.</td>
+<td>တောင်းပန်ပါတယ်။</td>
+</tr>
+<tr>
+<td>Thank you for waiting.</td>
+<td>谢谢您的耐心。<em>Xièxie nín de nàixīn.</em></td>
+<td>Terima kasih kerana menunggu.</td>
+<td>စောင့်ပေးတာ ကျေးဇူးပါ။</td>
+</tr>
+<tr>
+<td>Please be careful.</td>
+<td>请小心。<em>Qǐng xiǎoxīn.</em></td>
+<td>Sila berhati-hati.</td>
+<td>ဂရုစိုက်ပေးပါ။</td>
+</tr>
+<tr>
+<td>Please stay calm.</td>
+<td>请保持冷静。<em>Qǐng bǎochí lěngjìng.</em></td>
+<td>Sila bertenang.</td>
+<td>စိတ်အေးအေးထားပေးပါ။</td>
+</tr>
+<tr>
+<td>Please follow me to a safe area.</td>
+<td>请跟我到安全的地方。<em>Qǐng gēn wǒ dào ānquán de dìfāng.</em></td>
+<td>Sila ikut saya ke tempat selamat.</td>
+<td>ဘေးကင်းတဲ့နေရာကို လိုက်ခဲ့ပါ။</td>
+</tr>
+</tbody>
+</table></section>
+<section class="scenario" data-topic="လေ့ကျင့်ရန် အမှတ်ပေးစနစ်"><h2>လေ့ကျင့်ရန် အမှတ်ပေးစနစ်</h2><ul>
+<li>Customer မေးခွန်းကို နားထောင်ပြီး မှန်ကန်စွာ ပြန်ဖြေ — ၂ မှတ်</li>
+<li>အော်ဒါကို ပြန်အတည်ပြု — ၂ မှတ်</li>
+<li>မသေချာသောအချက်ကို မခန့်မှန်းဘဲ စစ်ဆေး — ၂ မှတ်</li>
+<li>ယဉ်ကျေးသောအသံနှင့် မျက်နှာချင်းဆိုင်ပြော — ၂ မှတ်</li>
+<li>နောက်ဆုံးတွင် ပြန်အသိပေး/နှုတ်ဆက် — ၂ မှတ်</li>
+</ul>
+<p><strong>စုစုပေါင်း ၁၀ မှတ်။</strong> တစ်ခန်းလျှင် Staff နှင့် Customer role ပြောင်းပြီး အနည်းဆုံး သုံးကြိမ် လေ့ကျင့်ပါ။</p></section>
+<section class="scenario" data-topic="၁၆။ စားပွဲပေါ်မှာ ရေ၊ လက်သုတ်ပဝါနှင့် ပန်းကန်ထပ်လိုခြင်း"><h2>၁၆။ စားပွဲပေါ်မှာ ရေ၊ လက်သုတ်ပဝါနှင့် ပန်းကန်ထပ်လိုခြင်း</h2><p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> Excuse me, could we have some water, please?<br />
+<strong>中文:</strong> 不好意思，可以给我们一些水吗？ <em>Bù hǎoyìsi, kěyǐ gěi wǒmen yìxiē shuǐ ma?</em><br />
+<strong>BM:</strong> Maaf, boleh beri kami air?<br />
+<strong>မြန်မာ:</strong> တောင်းပန်ပါတယ်၊ ရေနည်းနည်း ပေးလို့ရမလား။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> Certainly. I’ll bring water and extra cups.<br />
+<strong>中文:</strong> 当然可以，我拿水和额外的杯子给您。 <em>Dāngrán kěyǐ, wǒ ná shuǐ hé éwài de bēizi gěi nín.</em><br />
+<strong>BM:</strong> Boleh. Saya bawakan air dan cawan tambahan.<br />
+<strong>မြန်မာ:</strong> ရပါတယ်။ ရေနဲ့ ခွက်အပို ယူလာပေးပါမယ်။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> Could we have more napkins and small plates?<br />
+<strong>中文:</strong> 可以给我们多一些纸巾和小盘子吗？ <em>Kěyǐ gěi wǒmen duō yìxiē zhǐjīn hé xiǎo pánzi ma?</em><br />
+<strong>BM:</strong> Boleh beri tisu dan pinggan kecil tambahan?<br />
+<strong>မြန်မာ:</strong> တစ်ရှူးနဲ့ ပန်းကန်သေး အပို ပေးလို့ရမလား။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> Yes, I’ll bring them now.<br />
+<strong>中文:</strong> 可以，我现在拿来。 <em>Kěyǐ, wǒ xiànzài ná lái.</em><br />
+<strong>BM:</strong> Boleh, saya bawakan sekarang.<br />
+<strong>မြန်မာ:</strong> ရပါတယ်၊ အခု ယူလာပေးပါမယ်။</p>
+<hr /></section>
+<section class="scenario" data-topic="၁၇။ အော်ဒါပြောင်းခြင်း / အပိုအော်ဒါမှာခြင်း"><h2>၁၇။ အော်ဒါပြောင်းခြင်း / အပိုအော်ဒါမှာခြင်း</h2><p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> Can we add one more portion of beef?<br />
+<strong>中文:</strong> 可以再加一份牛肉吗？ <em>Kěyǐ zài jiā yí fèn niúròu ma?</em><br />
+<strong>BM:</strong> Boleh tambah satu hidangan daging lembu?<br />
+<strong>မြန်မာ:</strong> အမဲသားတစ်ပွဲ ထပ်မှာလို့ရမလား။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> I’ll add one portion of beef. Would you like anything else?<br />
+<strong>中文:</strong> 我帮您加一份牛肉。还需要别的吗？ <em>Wǒ bāng nín jiā yí fèn niúròu. Hái xūyào bié de ma?</em><br />
+<strong>BM:</strong> Saya tambah satu daging lembu. Ada apa-apa lagi?<br />
+<strong>မြန်မာ:</strong> အမဲသားတစ်ပွဲ ထပ်ထည့်ပေးပါမယ်။ နောက်ထပ် ဘာလိုသေးပါသလဲ။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> Can we remove the rice from our order?<br />
+<strong>中文:</strong> 可以把米饭从订单里取消吗？ <em>Kěyǐ bǎ mǐfàn cóng dìngdān lǐ qǔxiāo ma?</em><br />
+<strong>BM:</strong> Boleh buang nasi daripada pesanan kami?<br />
+<strong>မြန်မာ:</strong> အော်ဒါထဲက ထမင်းကို ဖျက်လို့ရမလား။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> I’ll check whether it has already been prepared, then I’ll confirm.<br />
+<strong>中文:</strong> 我先确认米饭是否已经准备好，再回复您。 <em>Wǒ xiān quèrèn mǐfàn shìfǒu yǐjīng zhǔnbèi hǎo, zài huífù nín.</em><br />
+<strong>BM:</strong> Saya semak sama ada nasi sudah disediakan, kemudian saya maklumkan.<br />
+<strong>မြန်မာ:</strong> ထမင်းပြင်ပြီးပြီလား အရင်စစ်ပြီး ပြန်အသိပေးပါမယ်။</p>
+<hr /></section>
+<section class="scenario" data-topic="၁၈။ အသားကျက်မှု / မီးကင်ချိန် မေးခြင်း"><h2>၁၈။ အသားကျက်မှု / မီးကင်ချိန် မေးခြင်း</h2><p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> Is the meat cooked through?<br />
+<strong>中文:</strong> 肉熟了吗？ <em>Ròu shú le ma?</em><br />
+<strong>BM:</strong> Adakah daging sudah masak sepenuhnya?<br />
+<strong>မြန်မာ:</strong> အသား ကျက်ပြီလား။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> I’ll check the meat and help you grill it safely.<br />
+<strong>中文:</strong> 我帮您确认肉是否熟了，也会安全地帮您烤。 <em>Wǒ bāng nín quèrèn ròu shìfǒu shú le, yě huì ānquán de bāng nín kǎo.</em><br />
+<strong>BM:</strong> Saya periksa daging dan bantu memanggang dengan selamat.<br />
+<strong>မြန်မာ:</strong> အသားကျက်ပြီလား စစ်ပြီး ဘေးကင်းအောင် ကင်ပေးပါမယ်။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> We prefer the meat well done, please.<br />
+<strong>中文:</strong> 我们喜欢肉熟一点。 <em>Wǒmen xǐhuān ròu shú yìdiǎn.</em><br />
+<strong>BM:</strong> Kami mahu daging yang masak sepenuhnya.<br />
+<strong>မြန်မာ:</strong> အသားကို ကျက်ကျက်လေး စားချင်ပါတယ်။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> I understand. I’ll cook it a little longer and check it for you.<br />
+<strong>中文:</strong> 明白，我再烤久一点并帮您确认。 <em>Míngbái, wǒ zài kǎo jiǔ yìdiǎn bìng bāng nín quèrèn.</em><br />
+<strong>BM:</strong> Baik, saya masak lebih lama sedikit dan periksa untuk anda.<br />
+<strong>မြန်မာ:</strong> နားလည်ပါပြီ။ နည်းနည်း ထပ်ကင်ပြီး စစ်ပေးပါမယ်။</p>
+<hr /></section>
+<section class="scenario" data-topic="၁၉။ မီးကင်ဇကာ / မီးအပူ ပြောင်းပေးရန်"><h2>၁၉။ မီးကင်ဇကာ / မီးအပူ ပြောင်းပေးရန်</h2><p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> Could you change the grill? It is getting dirty.<br />
+<strong>中文:</strong> 可以帮我们换烤网吗？烤网脏了。 <em>Kěyǐ bāng wǒmen huàn kǎowǎng ma? Kǎowǎng zāng le.</em><br />
+<strong>BM:</strong> Boleh tukar jaringan pemanggang? Ia sudah kotor.<br />
+<strong>မြန်မာ:</strong> မီးကင်ဇကာ ညစ်လာပြီ။ လဲပေးလို့ရမလား။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> Yes. Please move your hands away while I change it.<br />
+<strong>中文:</strong> 可以。换的时候请把手移开。 <em>Kěyǐ. Huàn de shíhou qǐng bǎ shǒu yíkāi.</em><br />
+<strong>BM:</strong> Boleh. Sila jauhkan tangan semasa saya menukarnya.<br />
+<strong>မြန်မာ:</strong> ရပါတယ်။ လဲနေတုန်း လက်ကို ဝေးဝေးထားပေးပါ။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> The grill is too hot.<br />
+<strong>中文:</strong> 烤炉太热了。 <em>Kǎolú tài rè le.</em><br />
+<strong>BM:</strong> Pemanggang terlalu panas.<br />
+<strong>မြန်မာ:</strong> မီးကင်က အရမ်းပူတယ်။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> I’ll reduce the heat and check the ventilation.<br />
+<strong>中文:</strong> 我把火调小一点，也检查通风。 <em>Wǒ bǎ huǒ tiáo xiǎo yìdiǎn, yě jiǎnchá tōngfēng.</em><br />
+<strong>BM:</strong> Saya kecilkan api dan periksa pengudaraan.<br />
+<strong>မြန်မာ:</strong> မီးအပူလျှော့ပြီး လေဝင်လေထွက်ကို စစ်ပေးပါမယ်။</p>
+<hr /></section>
+<section class="scenario" data-topic="၂၀။ သောက်စရာ ပြန်ဖြည့်ခြင်း / ရေခဲနှင့် သကြား"><h2>၂၀။ သောက်စရာ ပြန်ဖြည့်ခြင်း / ရေခဲနှင့် သကြား</h2><p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> Could we have less ice in the drink?<br />
+<strong>中文:</strong> 饮料可以少冰吗？ <em>Yǐnliào kěyǐ shǎo bīng ma?</em><br />
+<strong>BM:</strong> Boleh kurang ais dalam minuman?<br />
+<strong>မြန်မာ:</strong> သောက်စရာကို ရေခဲနည်းနည်းပဲ ထည့်ပေးလို့ရမလား။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> I’ll note that: less ice.<br />
+<strong>中文:</strong> 好的，我记下了：少冰。 <em>Hǎo de, wǒ jì xià le: shǎo bīng.</em><br />
+<strong>BM:</strong> Baik, saya catat: kurang ais.<br />
+<strong>မြန်မာ:</strong> ဟုတ်ကဲ့၊ ရေခဲနည်းနည်းလို့ မှတ်ထားပါမယ်။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> Could we have another bottle of water?<br />
+<strong>中文:</strong> 可以再给我们一瓶水吗？ <em>Kěyǐ zài gěi wǒmen yì píng shuǐ ma?</em><br />
+<strong>BM:</strong> Boleh tambah sebotol air?<br />
+<strong>မြန်မာ:</strong> ရေတစ်ဘူး ထပ်ပေးလို့ရမလား။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> Certainly. I’ll bring one more bottle.<br />
+<strong>中文:</strong> 当然可以，我再拿一瓶给您。 <em>Dāngrán kěyǐ, wǒ zài ná yì píng gěi nín.</em><br />
+<strong>BM:</strong> Boleh, saya bawakan sebotol lagi.<br />
+<strong>မြန်မာ:</strong> ရပါတယ်၊ ရေတစ်ဘူး ထပ်ယူလာပေးပါမယ်။</p>
+<hr /></section>
+<section class="scenario" data-topic="၂၁။ ကလေး / အသက်ကြီးသူ / အထူးလိုအပ်ချက်"><h2>၂၁။ ကလေး / အသက်ကြီးသူ / အထူးလိုအပ်ချက်</h2><p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> Could we have a table that is easier for an elderly person to access?<br />
+<strong>中文:</strong> 可以安排一张方便老人进出的桌子吗？ <em>Kěyǐ ānpái yì zhāng fāngbiàn lǎorén jìnchū de zhuōzi ma?</em><br />
+<strong>BM:</strong> Boleh beri meja yang mudah untuk warga emas?<br />
+<strong>မြန်မာ:</strong> အသက်ကြီးသူ လွယ်လွယ်ကူကူ သွားလာနိုင်တဲ့ စားပွဲ ရှိလား။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> I’ll check which table is most suitable and confirm with you.<br />
+<strong>中文:</strong> 我确认一下哪张桌子最合适，再告诉您。 <em>Wǒ quèrèn yíxià nǎ zhāng zhuōzi zuì héshì, zài gàosu nín.</em><br />
+<strong>BM:</strong> Saya semak meja yang paling sesuai dan maklumkan kepada anda.<br />
+<strong>မြန်မာ:</strong> ဘယ်စားပွဲက သင့်တော်လဲ အရင်စစ်ပြီး ပြန်ပြောပါမယ်။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> My child cannot eat spicy food.<br />
+<strong>中文:</strong> 我的孩子不能吃辣。 <em>Wǒ de háizi bù néng chī là.</em><br />
+<strong>BM:</strong> Anak saya tidak boleh makan pedas.<br />
+<strong>မြန်မာ:</strong> ကျွန်တော့်ကလေး စပ်တာမစားနိုင်ပါဘူး။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> I’ll check which items are suitable and confirm the ingredients.<br />
+<strong>中文:</strong> 我确认适合的菜，并核对食材。 <em>Wǒ quèrèn shìhé de cài, bìng héduì shícái.</em><br />
+<strong>BM:</strong> Saya semak hidangan yang sesuai dan sahkan bahan-bahannya.<br />
+<strong>မြန်မာ:</strong> သင့်တော်တဲ့ဟင်းနဲ့ ပါဝင်ပစ္စည်းကို စစ်ပြီး ပြန်ပြောပါမယ်။</p>
+<hr /></section>
+<section class="scenario" data-topic="၂၂။ ပစ္စည်းပျောက် / ဖုန်း၊ အိတ်၊ ထီး မေ့ကျန်ခြင်း"><h2>၂၂။ ပစ္စည်းပျောက် / ဖုန်း၊ အိတ်၊ ထီး မေ့ကျန်ခြင်း</h2><p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> I think I left my phone here. Could you help me check?<br />
+<strong>中文:</strong> 我觉得我把手机忘在这里了，可以帮我找找吗？ <em>Wǒ juéde wǒ bǎ shǒujī wàng zài zhèlǐ le, kěyǐ bāng wǒ zhǎozhao ma?</em><br />
+<strong>BM:</strong> Saya rasa tertinggal telefon di sini. Boleh bantu saya periksa?<br />
+<strong>မြန်မာ:</strong> ဖုန်းကို ဒီမှာ မေ့ကျန်ခဲ့တယ်ထင်တယ်။ စစ်ပေးလို့ရမလား။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> I’ll check the table and lost-and-found area with my manager.<br />
+<strong>中文:</strong> 我会和经理一起检查桌子和失物招领处。 <em>Wǒ huì hé jīnglǐ yìqǐ jiǎnchá zhuōzi hé shīwù zhāolǐng chù.</em><br />
+<strong>BM:</strong> Saya periksa meja dan tempat barang hilang bersama pengurus.<br />
+<strong>မြန်မာ:</strong> မန်နေဂျာနဲ့အတူ စားပွဲနဲ့ lost-and-found နေရာကို စစ်ပေးပါမယ်။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> It is a black phone with a blue case.<br />
+<strong>中文:</strong> 是一部黑色手机，蓝色手机壳。 <em>Shì yí bù hēisè shǒujī, lán sè shǒujī ké.</em><br />
+<strong>BM:</strong> Telefon hitam dengan sarung biru.<br />
+<strong>မြန်မာ:</strong> အပြာရောင် cover နဲ့ အမည်းရောင်ဖုန်းပါ။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> Thank you. Please wait here while we check.<br />
+<strong>中文:</strong> 谢谢，请在这里等我们确认。 <em>Xièxie, qǐng zài zhèlǐ děng wǒmen quèrèn.</em><br />
+<strong>BM:</strong> Terima kasih. Sila tunggu di sini sementara kami periksa.<br />
+<strong>မြန်မာ:</strong> ကျေးဇူးပါ။ ကျွန်တော်တို့ စစ်နေတုန်း ဒီမှာ စောင့်ပေးပါ။</p>
+<hr /></section>
+<section class="scenario" data-topic="၂၃။ Customer က မန်နေဂျာကို တွေ့ချင်ခြင်း"><h2>၂၃။ Customer က မန်နေဂျာကို တွေ့ချင်ခြင်း</h2><p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> Could I speak to the manager, please?<br />
+<strong>中文:</strong> 可以请经理过来吗？ <em>Kěyǐ qǐng jīnglǐ guòlái ma?</em><br />
+<strong>BM:</strong> Boleh saya bercakap dengan pengurus?<br />
+<strong>မြန်မာ:</strong> မန်နေဂျာနဲ့ စကားပြောလို့ရမလား။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> Certainly. I’ll call the manager now. Please give us a moment.<br />
+<strong>中文:</strong> 当然可以，我现在叫经理。请稍等。 <em>Dāngrán kěyǐ, wǒ xiànzài jiào jīnglǐ. Qǐng shāo děng.</em><br />
+<strong>BM:</strong> Boleh. Saya panggil pengurus sekarang. Sila tunggu sebentar.<br />
+<strong>မြန်မာ:</strong> ရပါတယ်။ အခု မန်နေဂျာကို ခေါ်လိုက်ပါမယ်။ ခဏစောင့်ပေးပါ။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> I would like to explain what happened.<br />
+<strong>中文:</strong> 我想说明刚才发生的事情。 <em>Wǒ xiǎng shuōmíng gāngcái fāshēng de shìqing.</em><br />
+<strong>BM:</strong> Saya ingin menerangkan apa yang berlaku.<br />
+<strong>မြန်မာ:</strong> ဖြစ်ခဲ့တာကို ရှင်းပြချင်ပါတယ်။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> I understand. I’ll make sure the manager hears your concern.<br />
+<strong>中文:</strong> 我明白，我会确保经理了解您的情况。 <em>Wǒ míngbái, wǒ huì quèbǎo jīnglǐ liǎojiě nín de qíngkuàng.</em><br />
+<strong>BM:</strong> Saya faham. Saya akan pastikan pengurus memahami perkara ini.<br />
+<strong>မြန်မာ:</strong> နားလည်ပါတယ်။ မန်နေဂျာက ဒီကိစ္စကို သိအောင် ပြောပေးပါမယ်။</p>
+<hr /></section>
+<section class="scenario" data-topic="၂၄။ အော်ဒါက ဘယ်လောက်ကြာမလဲ / ပြန်အသိပေးခြင်း"><h2>၂၄။ အော်ဒါက ဘယ်လောက်ကြာမလဲ / ပြန်အသိပေးခြင်း</h2><p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> How much longer will our food take?<br />
+<strong>中文:</strong> 我们的食物还要多久？ <em>Wǒmen de shíwù hái yào duō jiǔ?</em><br />
+<strong>BM:</strong> Berapa lama lagi makanan kami?<br />
+<strong>မြန်မာ:</strong> ကျွန်တော်တို့ အစားအစာ ဘယ်လောက်ကြာ ထပ်စောင့်ရမလဲ။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> I’ll check the exact status now. I don’t want to give you an incorrect estimate.<br />
+<strong>中文:</strong> 我现在确认具体进度，不想给您错误的估计。 <em>Wǒ xiànzài quèrèn jùtǐ jìndù, bù xiǎng gěi nín cuòwù de gūjì.</em><br />
+<strong>BM:</strong> Saya semak status sebenar sekarang. Saya tidak mahu beri anggaran yang salah.<br />
+<strong>မြန်မာ:</strong> အခု အော်ဒါအခြေအနေကို တိတိကျကျ စစ်ပေးပါမယ်။ မမှန်တဲ့ ခန့်မှန်းချိန် မပြောချင်ပါဘူး။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> Thank you for waiting. It is being prepared now; I’ll update you again shortly.<br />
+<strong>中文:</strong> 谢谢您的耐心，现在正在准备，很快再向您更新。 <em>Xièxie nín de nàixīn, xiànzài zhèngzài zhǔnbèi, hěn kuài zài xiàng nín gēngxīn.</em><br />
+<strong>BM:</strong> Terima kasih kerana menunggu. Pesanan sedang disediakan dan saya akan maklumkan semula sebentar lagi.<br />
+<strong>မြန်မာ:</strong> စောင့်ပေးတာ ကျေးဇူးပါ။ အခု ပြင်ဆင်နေပါတယ်။ ခဏနေ ပြန်အသိပေးပါမယ်။</p>
+<hr /></section>
+<section class="scenario" data-topic="၂၅။ အဆုံးမှာ ဘာမှမလိုတော့ကြောင်း အတည်ပြုခြင်း"><h2>၂၅။ အဆုံးမှာ ဘာမှမလိုတော့ကြောင်း အတည်ပြုခြင်း</h2><p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> Is there anything else you need before I leave?<br />
+<strong>中文:</strong> 在我离开前，还需要其他东西吗？ <em>Zài wǒ líkāi qián, hái xūyào qítā dōngxi ma?</em><br />
+<strong>BM:</strong> Ada apa-apa lagi yang anda perlukan sebelum saya pergi?<br />
+<strong>မြန်မာ:</strong> ကျွန်တော် မသွားခင် နောက်ထပ် လိုတာရှိသေးလား။</p>
+<p class="turn customer"><span class="role">CUSTOMER</span><strong>C:</strong> No, that’s all for now. Thank you.<br />
+<strong>中文:</strong> 没有了，暂时就这些，谢谢。 <em>Méiyǒu le, zànshí jiù zhèxiē, xièxie.</em><br />
+<strong>BM:</strong> Tiada, itu sahaja buat masa ini. Terima kasih.<br />
+<strong>မြန်မာ:</strong> မရှိတော့ပါဘူး၊ အခုတော့ ဒါပဲပါ။ ကျေးဇူးပါ။</p>
+<p class="turn waiter"><span class="role">WAITER</span><strong>W:</strong> You’re welcome. Please let me know if you need anything.<br />
+<strong>中文:</strong> 不客气，需要什么请告诉我。 <em>Bú kèqi, xūyào shénme qǐng gàosu wǒ.</em><br />
+<strong>BM:</strong> Sama-sama. Beritahu saya jika perlu apa-apa.<br />
+<strong>မြန်မာ:</strong> ရပါတယ်။ လိုအပ်တာရှိရင် ပြောပါ။</p></section></div><div class="footer">Sae Ma Eul Puchong · Staff practice app · Works offline after first load</div></main><script>
+const search=document.querySelector('#search');
+const topic=document.querySelector('#topic');
+const role=document.querySelector('#role');
+const count=document.querySelector('#count');
+const cards=[...document.querySelectorAll('.scenario')];
+let activeTopic='all', activeRole='all';
+function apply(){const q=(search.value||'').trim().toLowerCase();let n=0;cards.forEach(card=>{const text=card.textContent.toLowerCase();const topicMatch=activeTopic==='all'||card.dataset.topic===activeTopic;const roleMatch=activeRole==='all'||card.querySelector('.'+activeRole);const show=topicMatch&&roleMatch&&(!q||text.includes(q));card.classList.toggle('hidden',!show);if(show)n++});count.textContent=`${n} topics shown`}
+search.addEventListener('input',apply);
+document.querySelectorAll('[data-topic-filter]').forEach(btn=>btn.addEventListener('click',()=>{activeTopic=btn.dataset.topicFilter;document.querySelectorAll('[data-topic-filter]').forEach(x=>x.classList.toggle('active',x===btn));apply()}));
+document.querySelectorAll('[data-role-filter]').forEach(btn=>btn.addEventListener('click',()=>{activeRole=btn.dataset.roleFilter;document.querySelectorAll('[data-role-filter]').forEach(x=>x.classList.toggle('active',x===btn));apply()}));
+if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}))}
+apply();
+</script></body></html>
